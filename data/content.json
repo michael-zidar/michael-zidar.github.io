@@ -19771,6 +19771,20 @@
     },
     {
         "id": 1143,
+        "title": "Surrey Police",
+        "author": "Surrey Police",
+        "resource_link": "https://popcenter.asu.edu/sites/default/files/operation_blink_surrey_police.pdf",
+        "resource_year": 2019,
+        "resource_type": "pdf",
+        "agency": "Surrey Police",
+        "location": "United Kingdom",
+        "latitude": 51.2825396,
+        "longitude": -0.0763087,
+        "thumbnail": "",
+        "description": "Submission"
+    },
+    {
+        "id": 1144,
         "title": "Surrey Street Standards",
         "author": "Surrey Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-51(F).pdf",
@@ -19784,7 +19798,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1144,
+        "id": 1145,
         "title": "Operation Dodger",
         "author": "Sussex Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2005/05-15(F).pdf",
@@ -19798,7 +19812,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1145,
+        "id": 1146,
         "title": "Sexual Predator and Identification Program",
         "author": "Tampa Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-66.pdf",
@@ -19812,7 +19826,7 @@
         "description": "Submission"
     },
     {
-        "id": 1146,
+        "id": 1147,
         "title": "Public Information Project",
         "author": "Tempe Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-78.pdf",
@@ -19826,7 +19840,7 @@
         "description": "Submission"
     },
     {
-        "id": 1147,
+        "id": 1148,
         "title": "8th Street Project",
         "author": "Temple Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1996/96-58.pdf",
@@ -19840,7 +19854,7 @@
         "description": "Submission"
     },
     {
-        "id": 1148,
+        "id": 1149,
         "title": "Operation Paramount",
         "author": "Thames Valley Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/operation_paramount_thames_valley.pdf",
@@ -19854,7 +19868,7 @@
         "description": "Submission"
     },
     {
-        "id": 1149,
+        "id": 1150,
         "title": "Restoring Public Order in Adachi City",
         "author": "Tokyo Metropolitan Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/13-13_tokyo_japan.pdf",
@@ -19868,7 +19882,7 @@
         "description": "Submission"
     },
     {
-        "id": 1150,
+        "id": 1151,
         "title": "Children Bring Park Back to Life with a Homemade Touch",
         "author": "Tokyo Metropolitan Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/12-04_tokyo.pdf",
@@ -19882,7 +19896,7 @@
         "description": "Submission"
     },
     {
-        "id": 1151,
+        "id": 1152,
         "title": "Regulating Sexually Oriented Businesses",
         "author": "Toledo Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-44.pdf",
@@ -19896,7 +19910,7 @@
         "description": "Submission"
     },
     {
-        "id": 1152,
+        "id": 1153,
         "title": "ProblemOriented Policing at the Gold Star Market",
         "author": "Toledo Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-51.pdf",
@@ -19910,7 +19924,7 @@
         "description": "Submission"
     },
     {
-        "id": 1153,
+        "id": 1154,
         "title": "P.A.L. Boxing Program Offering Alternatives for O.N.Y.X. Weed and Seed Area Youth",
         "author": "Toledo Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-52.pdf",
@@ -19924,7 +19938,7 @@
         "description": "Submission"
     },
     {
-        "id": 1154,
+        "id": 1155,
         "title": "The Smart Solution: Turning Around a Problem Motel through Multiagency Coordination",
         "author": "Torrance Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2004/04-34.pdf",
@@ -19938,7 +19952,7 @@
         "description": "Submission"
     },
     {
-        "id": 1155,
+        "id": 1156,
         "title": "Not in My Neighborhood",
         "author": "Torrance Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-67.pdf",
@@ -19952,7 +19966,7 @@
         "description": "Submission"
     },
     {
-        "id": 1156,
+        "id": 1157,
         "title": "Reducing Cycle Theft: A Partnership Approach between Transport for London and the Metropolitan Police Service",
         "author": "Transport for London",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2011/11-54(W).pdf",
@@ -19966,7 +19980,7 @@
         "description": "Submission"
     },
     {
-        "id": 1157,
+        "id": 1158,
         "title": "Tackling Youth Crime  AntiSocial Behaviour on Londons Buses",
         "author": "Transport for London",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-47(F).pdf",
@@ -19980,7 +19994,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1158,
+        "id": 1159,
         "title": "Safer Travel at Night Campaign",
         "author": "Transport for London",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2006/06-49(W).pdf",
@@ -19994,7 +20008,7 @@
         "description": "Submission"
     },
     {
-        "id": 1159,
+        "id": 1160,
         "title": "Neighbor by Neighbor",
         "author": "Troy Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1995/95-85.pdf",
@@ -20008,7 +20022,7 @@
         "description": "Submission"
     },
     {
-        "id": 1160,
+        "id": 1161,
         "title": "Top Ten Percent",
         "author": "Tucson Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2006/06-50.pdf",
@@ -20022,7 +20036,7 @@
         "description": "Submission"
     },
     {
-        "id": 1161,
+        "id": 1162,
         "title": "The Three Ps Project: Pimps, Prostitutes, and Pushers",
         "author": "Tucson Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-68.pdf",
@@ -20036,7 +20050,7 @@
         "description": "Submission"
     },
     {
-        "id": 1162,
+        "id": 1163,
         "title": "Taking Back Our Boulevard",
         "author": "Tukwila Police Department",
         "resource_link": "https://live-cpop.ws.asu.edu/sites/default/files/org/15-23_tukwila.pdf",
@@ -20050,7 +20064,7 @@
         "description": "Submission"
     },
     {
-        "id": 1163,
+        "id": 1164,
         "title": "The Community Governance Model and Problem Oriented Policing; A Holistic Approach to Transforming a Neighborhood",
         "author": "Tustin Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2010/10-19.pdf",
@@ -20064,7 +20078,7 @@
         "description": "Submission"
     },
     {
-        "id": 1164,
+        "id": 1165,
         "title": "Narcotic Detection/Criminal Apprehension through Enforcement and Education",
         "author": "Twin Falls Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-69.pdf",
@@ -20078,7 +20092,7 @@
         "description": "Submission"
     },
     {
-        "id": 1165,
+        "id": 1166,
         "title": "State Route 4 Campaign",
         "author": "Union County Sheriff's Office",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-48.pdf",
@@ -20092,7 +20106,7 @@
         "description": "Submission"
     },
     {
-        "id": 1166,
+        "id": 1167,
         "title": "South Florida Seaports Internal Conspiracy Project",
         "author": "United States Custom Service",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-70.pdf",
@@ -20106,7 +20120,7 @@
         "description": "Submission"
     },
     {
-        "id": 1167,
+        "id": 1168,
         "title": "Stop Stick Program",
         "author": "United States Custom Service",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-71.pdf",
@@ -20120,7 +20134,7 @@
         "description": "Submission"
     },
     {
-        "id": 1168,
+        "id": 1169,
         "title": "Operation Hard Line",
         "author": "United States Custom Service",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1995/95-86.pdf",
@@ -20134,7 +20148,7 @@
         "description": "Submission"
     },
     {
-        "id": 1169,
+        "id": 1170,
         "title": "Police Perception Project",
         "author": "University of Alabama at Birmingham Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/97-68.pdf",
@@ -20148,7 +20162,7 @@
         "description": "Submission"
     },
     {
-        "id": 1170,
+        "id": 1171,
         "title": "Police Perception Project",
         "author": "University of Alabama at Birmingham Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1996/96-60.pdf",
@@ -20162,7 +20176,7 @@
         "description": "Submission"
     },
     {
-        "id": 1171,
+        "id": 1172,
         "title": "Wasting Away In Margaritaville: From Animal House to Healthy Choices",
         "author": "University of Alaska-Fairbanks Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2000/00-31.pdf",
@@ -20176,7 +20190,7 @@
         "description": "Submission"
     },
     {
-        "id": 1172,
+        "id": 1173,
         "title": "Strategic Investigation:OffCampus Burglary Reduction Project",
         "author": "University of Cincinnati Police Division",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/university_of_cincinnati_pd_off-campus_burglary_reduction_project_2021.pdf",
@@ -20190,7 +20204,7 @@
         "description": "Winner!"
     },
     {
-        "id": 1173,
+        "id": 1174,
         "title": "Hungry for Justice",
         "author": "University of Texas at Austin Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-49.pdf",
@@ -20204,7 +20218,7 @@
         "description": "Submission"
     },
     {
-        "id": 1174,
+        "id": 1175,
         "title": "Textbook Thefts: The Pen is Mightier than the Sword",
         "author": "University of Wisconsin-Madison Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-50.pdf",
@@ -20218,7 +20232,7 @@
         "description": "Submission"
     },
     {
-        "id": 1175,
+        "id": 1176,
         "title": "Project Moped Invasion",
         "author": "University of Wisconsin-Madison Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-51.pdf",
@@ -20232,7 +20246,7 @@
         "description": "Submission"
     },
     {
-        "id": 1176,
+        "id": 1177,
         "title": "Community and Police Response to Graffiti, within the Mosse Humanities Building",
         "author": "University of Wisconsin-Madison Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2006/06-51.pdf",
@@ -20246,7 +20260,7 @@
         "description": "Submission"
     },
     {
-        "id": 1177,
+        "id": 1178,
         "title": "Alcoholic Vagrants",
         "author": "University of Wisconsin-Madison Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-69.pdf",
@@ -20260,7 +20274,7 @@
         "description": "Submission"
     },
     {
-        "id": 1178,
+        "id": 1179,
         "title": "Theft Deterrence Strategies",
         "author": "Vallejo Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/19-36_vallejo_ca_theft_deterrence_strategies.pdf",
@@ -20274,7 +20288,7 @@
         "description": "Submission"
     },
     {
-        "id": 1179,
+        "id": 1180,
         "title": "Cabrillo Village Project",
         "author": "Ventura Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1995/95-88.pdf",
@@ -20288,7 +20302,7 @@
         "description": "Submission"
     },
     {
-        "id": 1180,
+        "id": 1181,
         "title": "The Ramona Street Project",
         "author": "Ventura Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1995/95-89.pdf",
@@ -20302,7 +20316,7 @@
         "description": "Submission"
     },
     {
-        "id": 1181,
+        "id": 1182,
         "title": "Project Borderless:Cooperation is the Future",
         "author": "Vestfold Police District",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/12-15_vestfold_norway.pdf",
@@ -20316,7 +20330,7 @@
         "description": "Submission"
     },
     {
-        "id": 1182,
+        "id": 1183,
         "title": "Gypsy Cabs in Tonsberg",
         "author": "Vestfold Police District",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2004/04-35(F).pdf",
@@ -20330,7 +20344,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1183,
+        "id": 1184,
         "title": "VicPD Response to Tent City",
         "author": "Victoria Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/17-13.pdf",
@@ -20344,7 +20358,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1184,
+        "id": 1185,
         "title": "Investigation of Housing Fraud in Section 8 Housing Choice Voucher Program",
         "author": "Virginia Beach Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-45.pdf",
@@ -20358,7 +20372,7 @@
         "description": "Submission"
     },
     {
-        "id": 1185,
+        "id": 1186,
         "title": "Reduction in Alcohol Related Fatal and Injury Crashes",
         "author": "Virginia Beach Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-54.pdf",
@@ -20372,7 +20386,7 @@
         "description": "Submission"
     },
     {
-        "id": 1186,
+        "id": 1187,
         "title": "Operation Hillman",
         "author": "Warwickshire Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/warwickshire_police_operation_hillman_2020.pdf",
@@ -20386,7 +20400,7 @@
         "description": "Submission"
     },
     {
-        "id": 1187,
+        "id": 1188,
         "title": "Trolley Safe",
         "author": "Warwickshire Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2009/09-16(F).pdf",
@@ -20400,7 +20414,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1188,
+        "id": 1189,
         "title": "Operation Reduce Our Drive Time Every Day",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/16-14_washington_state_patrol.pdf",
@@ -20414,7 +20428,7 @@
         "description": "Submission"
     },
     {
-        "id": 1189,
+        "id": 1190,
         "title": "Operation S.A.F.E. StudentSpeed, Aggressive Driving, Failure to Stop Enforcement",
         "author": "Washington State Patrol",
         "resource_link": "https://live-cpop.ws.asu.edu/sites/default/files/org/15-10_washington_state_patrol.pdf",
@@ -20428,7 +20442,7 @@
         "description": "Submission"
     },
     {
-        "id": 1190,
+        "id": 1191,
         "title": "Snohomish County Speed Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/13-16_washington_state_patrol.pdf",
@@ -20442,7 +20456,7 @@
         "description": "Submission"
     },
     {
-        "id": 1191,
+        "id": 1192,
         "title": "Basin Triangle Project Detail",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/12-23_washington_state_patrol.pdf",
@@ -20456,7 +20470,7 @@
         "description": "Submission"
     },
     {
-        "id": 1192,
+        "id": 1193,
         "title": "Skagit Community Connection",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2011/11-51.pdf",
@@ -20470,7 +20484,7 @@
         "description": "Submission"
     },
     {
-        "id": 1193,
+        "id": 1194,
         "title": "Yakama Nation Outreach",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2010/10-39.pdf",
@@ -20484,7 +20498,7 @@
         "description": "Submission"
     },
     {
-        "id": 1194,
+        "id": 1195,
         "title": "DUI Aerial Response Team",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2009/09-18.pdf",
@@ -20498,7 +20512,7 @@
         "description": "Submission"
     },
     {
-        "id": 1195,
+        "id": 1196,
         "title": "Motorcycle Safety Through Licensing, Education, and Enforcement",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-52(F).pdf",
@@ -20512,7 +20526,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1196,
+        "id": 1197,
         "title": "Cape Horn Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2007/07-40.pdf",
@@ -20526,7 +20540,7 @@
         "description": "Submission"
     },
     {
-        "id": 1197,
+        "id": 1198,
         "title": "Homeward Bound Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2007/07-41.pdf",
@@ -20540,7 +20554,7 @@
         "description": "Submission"
     },
     {
-        "id": 1198,
+        "id": 1199,
         "title": "State Route 241 Crossroads Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2007/07-42.pdf",
@@ -20554,7 +20568,7 @@
         "description": "Submission"
     },
     {
-        "id": 1199,
+        "id": 1200,
         "title": "Ticketing Aggressive Cars and Trucks",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2006/06-52.pdf",
@@ -20568,7 +20582,7 @@
         "description": "Submission"
     },
     {
-        "id": 1200,
+        "id": 1201,
         "title": "Most Wanted Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2005/05-17.pdf",
@@ -20582,7 +20596,7 @@
         "description": "Submission"
     },
     {
-        "id": 1201,
+        "id": 1202,
         "title": "Tissue/Organ Donation Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2004/04-36.pdf",
@@ -20596,7 +20610,7 @@
         "description": "Submission"
     },
     {
-        "id": 1202,
+        "id": 1203,
         "title": "Hispanic/Latino Community Traffic Safety Educational Outreach",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2004/04-37.pdf",
@@ -20610,7 +20624,7 @@
         "description": "Submission"
     },
     {
-        "id": 1203,
+        "id": 1204,
         "title": "Reduction of Traffic Congestion Using Photogrammetry Technology",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-46.pdf",
@@ -20624,7 +20638,7 @@
         "description": "Submission"
     },
     {
-        "id": 1204,
+        "id": 1205,
         "title": "546",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-55.pdf",
@@ -20638,7 +20652,7 @@
         "description": "Submission"
     },
     {
-        "id": 1205,
+        "id": 1206,
         "title": "Auto Theft Project",
         "author": "Washington State Patrol",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-56.pdf",
@@ -20652,7 +20666,7 @@
         "description": "Submission"
     },
     {
-        "id": 1206,
+        "id": 1207,
         "title": "Truckee River Project",
         "author": "Washoe County Sheriff's Office",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-79.pdf",
@@ -20666,7 +20680,7 @@
         "description": "Submission"
     },
     {
-        "id": 1207,
+        "id": 1208,
         "title": "Soothing the Beast to Enhance Quality of Life",
         "author": "Washtenaw County Sheriff's Office",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2011/11-56.pdf",
@@ -20680,7 +20694,7 @@
         "description": "Submission"
     },
     {
-        "id": 1208,
+        "id": 1209,
         "title": "Victoria Hills Community Garden",
         "author": "Waterloo Regional Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-72.pdf",
@@ -20694,7 +20708,7 @@
         "description": "Submission"
     },
     {
-        "id": 1209,
+        "id": 1210,
         "title": "Project S.W.E.E.P.",
         "author": "Waukesha Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-53.pdf",
@@ -20708,7 +20722,7 @@
         "description": "Submission"
     },
     {
-        "id": 1210,
+        "id": 1211,
         "title": "Police and Partners",
         "author": "Waukesha Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-47.pdf",
@@ -20722,7 +20736,7 @@
         "description": "Submission"
     },
     {
-        "id": 1211,
+        "id": 1212,
         "title": "Family Violence Reduction Project",
         "author": "West Columbia Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-54.pdf",
@@ -20736,7 +20750,7 @@
         "description": "Submission"
     },
     {
-        "id": 1212,
+        "id": 1213,
         "title": "Crime Free MultiHousing Program",
         "author": "West Covina Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-73.pdf",
@@ -20750,7 +20764,7 @@
         "description": "Submission"
     },
     {
-        "id": 1213,
+        "id": 1214,
         "title": "We Dont Buy Crime",
         "author": "West Mercia Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/west_mercia_police_project_we_dont_buy_crime_2020.pdf",
@@ -20764,7 +20778,7 @@
         "description": "Submission"
     },
     {
-        "id": 1214,
+        "id": 1215,
         "title": "Operation Street Strike",
         "author": "West Midlands Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-74.pdf",
@@ -20778,7 +20792,7 @@
         "description": "Submission"
     },
     {
-        "id": 1215,
+        "id": 1216,
         "title": "Responding Against Delinquency and Recidivism",
         "author": "West Palm Beach Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-80.pdf",
@@ -20792,7 +20806,7 @@
         "description": "Submission"
     },
     {
-        "id": 1216,
+        "id": 1217,
         "title": "All Night Program",
         "author": "West Virginia University Department of Public Safety",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2005/05-18.pdf",
@@ -20806,7 +20820,7 @@
         "description": "Submission"
     },
     {
-        "id": 1217,
+        "id": 1218,
         "title": "Halifax Towne Center Crime Reduction",
         "author": "West Yorkshire Police",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-55.pdf",
@@ -20820,7 +20834,7 @@
         "description": "Submission"
     },
     {
-        "id": 1218,
+        "id": 1219,
         "title": "Raising the Bar for Rental Properties",
         "author": "Westfield Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2011/11-43.pdf",
@@ -20834,7 +20848,7 @@
         "description": "Submission"
     },
     {
-        "id": 1219,
+        "id": 1220,
         "title": "Progress Through Partnerships in Little Saigon",
         "author": "Westminster Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2011/11-59.pdf",
@@ -20848,7 +20862,7 @@
         "description": "Submission"
     },
     {
-        "id": 1220,
+        "id": 1221,
         "title": "Step Up: Youth Violence Prevention Program",
         "author": "White Plains Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2008/08-56.pdf",
@@ -20862,7 +20876,7 @@
         "description": "Submission"
     },
     {
-        "id": 1221,
+        "id": 1222,
         "title": "Community Advocacy",
         "author": "White Plains Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2005/05-19.pdf",
@@ -20876,7 +20890,7 @@
         "description": "Submission"
     },
     {
-        "id": 1222,
+        "id": 1223,
         "title": "Safe Housing",
         "author": "White Plains Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2005/05-20.pdf",
@@ -20890,7 +20904,7 @@
         "description": "Submission"
     },
     {
-        "id": 1223,
+        "id": 1224,
         "title": "Operation Safe Streets",
         "author": "White Plains Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-48.pdf",
@@ -20904,7 +20918,7 @@
         "description": "Submission"
     },
     {
-        "id": 1224,
+        "id": 1225,
         "title": "Happy Land Social Club",
         "author": "White Plains Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-75.pdf",
@@ -20918,7 +20932,7 @@
         "description": "Submission"
     },
     {
-        "id": 1225,
+        "id": 1226,
         "title": "Planeview Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-49.pdf",
@@ -20932,7 +20946,7 @@
         "description": "Submission"
     },
     {
-        "id": 1226,
+        "id": 1227,
         "title": "Hilltop Community Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-73.pdf",
@@ -20946,7 +20960,7 @@
         "description": "Submission"
     },
     {
-        "id": 1227,
+        "id": 1228,
         "title": "Juvenile Underage Drinking Group Education",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-74.pdf",
@@ -20960,7 +20974,7 @@
         "description": "Submission"
     },
     {
-        "id": 1228,
+        "id": 1229,
         "title": "Neighborhood Revitalization Program",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1999/99-75.pdf",
@@ -20974,7 +20988,7 @@
         "description": "Submission"
     },
     {
-        "id": 1229,
+        "id": 1230,
         "title": "Spectators Club Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-81.pdf",
@@ -20988,7 +21002,7 @@
         "description": "Submission"
     },
     {
-        "id": 1230,
+        "id": 1231,
         "title": "\"FIT to Drive\"",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-82.pdf",
@@ -21002,7 +21016,7 @@
         "description": "Submission"
     },
     {
-        "id": 1231,
+        "id": 1232,
         "title": "South Seneca Cruising Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-83.pdf",
@@ -21016,7 +21030,7 @@
         "description": "Submission"
     },
     {
-        "id": 1232,
+        "id": 1233,
         "title": "Old Town Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-84.pdf",
@@ -21030,7 +21044,7 @@
         "description": "Submission"
     },
     {
-        "id": 1233,
+        "id": 1234,
         "title": "Falcon Pointe Apartment Complex Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1998/98-85.pdf",
@@ -21044,7 +21058,7 @@
         "description": "Submission"
     },
     {
-        "id": 1234,
+        "id": 1235,
         "title": "21st Street Community Renovation Strategy",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-76.pdf",
@@ -21058,7 +21072,7 @@
         "description": "Submission"
     },
     {
-        "id": 1235,
+        "id": 1236,
         "title": "South Central Neighborhood Project",
         "author": "Wichita Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1996/96-59(F).pdf",
@@ -21072,7 +21086,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1236,
+        "id": 1237,
         "title": "Gang Intervention Task Force",
         "author": "Wilmington Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2000/00-33.pdf",
@@ -21086,7 +21100,7 @@
         "description": "Submission"
     },
     {
-        "id": 1237,
+        "id": 1238,
         "title": "Senior Citizens Awareness Network",
         "author": "Wilson County Sheriff's Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2002/02-57.pdf",
@@ -21100,7 +21114,7 @@
         "description": "Submission"
     },
     {
-        "id": 1238,
+        "id": 1239,
         "title": "The Winnipeg Auto Theft Suppression Strategy",
         "author": "Winnipeg Police Service",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2009/09-42(F).pdf",
@@ -21114,7 +21128,7 @@
         "description": "Finalist"
     },
     {
-        "id": 1239,
+        "id": 1240,
         "title": "Auto Theft Intervention Program",
         "author": "Winnipeg Police Service",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2003/03-50.pdf",
@@ -21128,7 +21142,7 @@
         "description": "Submission"
     },
     {
-        "id": 1240,
+        "id": 1241,
         "title": "Graffiti Removal Program",
         "author": "Winston Salem Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/1997/97-77.pdf",
@@ -21142,7 +21156,7 @@
         "description": "Submission"
     },
     {
-        "id": 1241,
+        "id": 1242,
         "title": "Sturgeon Protection through Citizen Involvement",
         "author": "Wisconsin Department of Natural Resources",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/13-37_wisconsin_dnr.pdf",
@@ -21156,7 +21170,7 @@
         "description": "Submission"
     },
     {
-        "id": 1242,
+        "id": 1243,
         "title": "Creating Relationships and Safe Hotels",
         "author": "Woodbury Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2001/01-72.pdf",
@@ -21170,7 +21184,7 @@
         "description": "Submission"
     },
     {
-        "id": 1243,
+        "id": 1244,
         "title": "Countering an Influx of Gun Violence",
         "author": "Worcester Police Department",
         "resource_link": "https://popcenter.asu.edu/sites/default/files/library/awards/goldstein/2007/07-43.pdf",
