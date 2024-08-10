@@ -3,17 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POP Projects Data Set</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
+    <title>POP Projects: About</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="site.js" defer></script>
@@ -38,7 +29,7 @@
         </div>
         <div id="menu" class="w-full lg:flex lg:items-center lg:w-auto hidden">
             <div class="lg:flex-grow">
-                <a href="#" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+                <a href="/" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
                     Home
                 </a>
                 <a href="about.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
@@ -61,15 +52,12 @@
         </div>
     </nav>
 
-    <div id="map"></div>
-    <div>
-        <button id="reset">Reset</button>
-        <button id="filter">Filter</button>
-        <!-- style the search with tailwind -->
-        <input type="text" id="search" class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none">
-        <table id="table">
-
-        </table>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-semibold">About</h1>
+        <p class="mt-4">
+            This is a collection of data from the Center on Problem Oriented Policing.
+        </p>
     </div>
+
 </body>
 </html>
