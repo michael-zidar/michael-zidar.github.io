@@ -83,18 +83,24 @@ function styleMarkdown(element) {
 
 function renderPopup(location) {
     return `
-        <h2 class="
-            text-lg
-            font-semibold
-            text-gray-800
-        ">${location.title}</h2>
-        <p>${location.agency}</p>
-        <p>${location.resource_year}</p>
-        <a href="${location.resource_link}" target="_blank" class="
-            text-blue-500
-            hover:underline
-            dark:text-blue-400
-        ">Project Link</a>
+        <div class="max-w-sm">
+            <h2 class="
+                text-xl
+                font-bold
+                text-gray-800
+                mb-2
+            ">${location.title}</h2>
+            <div class="flex justify-between items-start">
+                <div class="flex flex-col">
+                    <p class="text-sm text-gray-600">${location.agency} - ${location.resource_year}</p>
+                </div>
+                <div class="ml-4">
+                    <a href="${location.resource_link}">
+                        <img class="shadow-md w-24 h-auto object-cover" src="${location.thumbnail}" alt="${location.title}">
+                    </a>
+                </div>
+            </div>
+        </div>
     `;
 }
 
