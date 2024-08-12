@@ -20,7 +20,3 @@ The award data has been collected from the POP Center website. The data is avail
 
 
 ## The Interactive Site
-
-
-- Item 1
-- Item 2

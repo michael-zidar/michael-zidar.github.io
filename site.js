@@ -113,7 +113,7 @@ if(document.getElementById("readme")){
 
 if (document.getElementById('map')) {
 
-    let map = L.map('map').setView([0, 0], 2);
+    let map = L.map('map').setView([37.96, -62.25], 2);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -151,10 +151,6 @@ if (document.getElementById('map')) {
 
             map.addLayer(markers);
 
-            if (markers.getLayers().length > 0) {
-                map.fitBounds(markers.getBounds());
-            }
-
             let table = document.getElementById('table');
 
             table.classList.add(
@@ -178,10 +174,12 @@ if (document.getElementById('map')) {
                     let title = row.insertCell(0);
                     let agency = row.insertCell(1);
                     let agency_location = row.insertCell(2);
+                    let year = row.insertCell(3);
 
                     title.innerHTML = location.title;
                     agency.innerHTML = location.agency;
                     agency_location.innerHTML = location.location;
+                    year.innerHTML = location.resource_year;
                 }
             });
 
@@ -212,8 +210,9 @@ if (document.getElementById('map')) {
                     let title = row.cells[0].innerHTML.toLowerCase();
                     let agency = row.cells[1].innerHTML.toLowerCase();
                     let location = row.cells[2].innerHTML.toLowerCase();
+                    let year = row.cells[3].innerHTML.toLowerCase();
 
-                    if (title.includes(value) || agency.includes(value) || location.includes(value)) {
+                    if (title.includes(value) || agency.includes(value) || location.includes(value) || year.includes(value)) {
                         row.style.display = '';
                         if (markerMap[row.cells[0].innerHTML]) {
                             markerMap[row.cells[0].innerHTML].addTo(markers); // Show matching markers
@@ -225,9 +224,9 @@ if (document.getElementById('map')) {
                         }
                     }
                 });
-                if (markers.getLayers().length > 0) {
-                    map.fitBounds(markers.getBounds());
-                }
+                // if (markers.getLayers().length > 0) {
+                //     map.fitBounds(markers.getBounds());
+                // }
             });
 
             // Add an event listener for the reset button
@@ -245,28 +244,6 @@ if (document.getElementById('map')) {
                 }
             });
 
-            // Add an event listener for the filter input
-            let filter = document.getElementById('filter');
-            filter.addEventListener('input', () => {
-                let value = filter.value.toLowerCase();
-                rows.forEach(row => {
-                    let country = row.cells[2].innerHTML.toLowerCase();
-                    if (country.includes(value)) {
-                        row.style.display = '';
-                        if (markerMap[row.cells[0].innerHTML]) {
-                            markerMap[row.cells[0].innerHTML].addTo(markers); // Show matching markers
-                        }
-                    } else {
-                        row.style.display = 'none';
-                        if (markerMap[row.cells[0].innerHTML]) {
-                            markers.removeLayer(markerMap[row.cells[0].innerHTML]); // Hide non-matching markers
-                        }
-                    }
-                });
-                if (markers.getLayers().length > 0) {
-                    map.fitBounds(markers.getBounds());
-                }
-            });
         })
         .catch(error => console.error('Error fetching the data:', error));
 
