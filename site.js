@@ -14,7 +14,102 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// if the page contains the map element
+function styleMarkdown(element) {
+    // Styling headings
+    element.querySelectorAll('h1').forEach(h1 => {
+        h1.classList.add('text-5xl', 'font-extrabold', 'dark:text-white', 'mb-4');
+    });
+
+    element.querySelectorAll('h2').forEach(h2 => {
+        h2.classList.add('text-4xl', 'font-bold', 'dark:text-white', 'mb-3');
+    });
+
+    element.querySelectorAll('h3').forEach(h3 => {
+        h3.classList.add('text-3xl', 'font-semibold', 'dark:text-white', 'mb-2');
+    });
+
+    element.querySelectorAll('h4').forEach(h4 => {
+        h4.classList.add('text-2xl', 'font-medium', 'dark:text-white', 'mb-2');
+    });
+
+    element.querySelectorAll('h5').forEach(h5 => {
+        h5.classList.add('text-xl', 'font-medium', 'dark:text-white', 'mb-2');
+    });
+
+    element.querySelectorAll('h6').forEach(h6 => {
+        h6.classList.add('text-lg', 'font-medium', 'dark:text-white', 'mb-2');
+    });
+
+    // Styling paragraphs
+    element.querySelectorAll('p').forEach(p => {
+        p.classList.add('text-base', 'text-gray-700', 'dark:text-gray-300', 'mb-4');
+    });
+
+    // Styling blockquotes
+    element.querySelectorAll('blockquote').forEach(blockquote => {
+        blockquote.classList.add('border-l-4', 'border-gray-300', 'pl-4', 'italic', 'text-gray-600', 'dark:text-gray-400');
+    });
+
+    // Styling code blocks
+    element.querySelectorAll('pre').forEach(pre => {
+        pre.classList.add('bg-gray-900', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4');
+    });
+
+    element.querySelectorAll('code').forEach(code => {
+        code.classList.add('bg-gray-200', 'text-pink-500', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm');
+    });
+
+    // Styling unordered lists
+    element.querySelectorAll('ul').forEach(ul => {
+        ul.classList.add('list-disc', 'pl-5', 'mb-4', 'text-base', 'text-gray-700', 'dark:text-gray-300');
+    });
+
+    // Styling ordered lists
+    element.querySelectorAll('ol').forEach(ol => {
+        ol.classList.add('list-decimal', 'pl-5', 'mb-4', 'text-base', 'text-gray-700', 'dark:text-gray-300');
+    });
+
+    // Styling links
+    element.querySelectorAll('a').forEach(a => {
+        a.classList.add('text-blue-500', 'hover:underline', 'dark:text-blue-400');
+        a.setAttribute('target', '_blank');
+    });
+
+    // Styling images
+    element.querySelectorAll('img').forEach(img => {
+        img.classList.add('rounded', 'shadow', 'max-w-full', 'h-auto', 'mb-4');
+    });
+}
+
+function renderPopup(location) {
+    return `
+        <h2 class="
+            text-lg
+            font-semibold
+            text-gray-800
+        ">${location.title}</h2>
+        <p>${location.agency}</p>
+        <p>${location.resource_year}</p>
+        <a href="${location.resource_link}" target="_blank" class="
+            text-blue-500
+            hover:underline
+            dark:text-blue-400
+        ">Project Link</a>
+    `;
+}
+
+
+if(document.getElementById("readme")){
+//    fetch the text from the README.md file
+    fetch('README.md')
+        .then(response => response.text())
+        .then(text => {
+            document.getElementById('readme').innerHTML = marked.parse(text)
+            styleMarkdown(document.getElementById('readme'));
+        })
+        .catch(error => console.error('Error fetching the README.md file:', error));
+}
+
 if (document.getElementById('map')) {
 
     let map = L.map('map').setView([0, 0], 2);
@@ -43,9 +138,8 @@ if (document.getElementById('map')) {
                         fillColor: '#811E42',
                         fillOpacity: 1,
                         radius: 5
-                    }).bindPopup(`<h2>${location.title}</h2><p>${location.agency}</p>`);
+                    }).bindPopup(renderPopup(location));
 
-                    // Ensure title is unique and add marker to markerMap
                     if (!markerMap[location.title]) {
                         markerMap[location.title] = marker;
                         // Add the marker to the cluster group
@@ -60,10 +154,8 @@ if (document.getElementById('map')) {
                 map.fitBounds(markers.getBounds());
             }
 
-
             let table = document.getElementById('table');
 
-            // Add Tailwind classes to the table
             table.classList.add(
                 'w-full',
                 'border-collapse',
@@ -74,7 +166,6 @@ if (document.getElementById('map')) {
                 'shadow-md',
             );
 
-            // Add Tailwind classes to table header cells (if any)
             let headers = table.querySelectorAll('th');
             headers.forEach(header => {
                 header.classList.add('px-4', 'py-2', 'bg-gray-200', 'text-left', 'font-semibold');
@@ -179,3 +270,4 @@ if (document.getElementById('map')) {
         .catch(error => console.error('Error fetching the data:', error));
 
 }
+
