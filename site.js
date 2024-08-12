@@ -113,7 +113,7 @@ if(document.getElementById("readme")){
 
 if (document.getElementById('map')) {
 
-    let map = L.map('map').setView([37.96, -62.25], 2);
+    let map = L.map('map', {minZoom: 2, maxZoom: 16}).setView([37.96, -62.25], 2);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -146,6 +146,9 @@ if (document.getElementById('map')) {
                         // Add the marker to the cluster group
                         markers.addLayer(marker);
                     }
+
+                    // set an id to the marker for easy access
+                    marker._leaflet_id = location.id;
                 }
             });
 
@@ -153,20 +156,15 @@ if (document.getElementById('map')) {
 
             let table = document.getElementById('table');
 
-            table.classList.add(
-                'w-full',
-                'border-collapse',
-                'border',
-                'border-gray-300',
-                'divide-y',
-                'divide-gray-300',
-                'shadow-md',
-            );
-
-            let headers = table.querySelectorAll('th');
-            headers.forEach(header => {
-                header.classList.add('px-4', 'py-2', 'bg-gray-200', 'text-left', 'font-semibold');
-            });
+            // table.classList.add(
+            //     'w-full',
+            //     'border-collapse',
+            //     'border',
+            //     'border-gray-300',
+            //     'divide-y',
+            //     'divide-gray-300',
+            //     'shadow-md',
+            // );
 
             data.forEach(location => {
                 if (location.latitude || location.longitude) {
@@ -180,24 +178,28 @@ if (document.getElementById('map')) {
                     agency.innerHTML = location.agency;
                     agency_location.innerHTML = location.location;
                     year.innerHTML = location.resource_year;
+                    // set the row id to the location.id
+                    row.id = location.id;
                 }
             });
 
             // Add an event listener for the table rows
             let rows = document.querySelectorAll('#table tr');
             rows.forEach(row => {
+                row.classList.add('h-12', 'px-4', 'text-align-left', 'angle-middle', 'font-sm', 'text-muted-foreground');
+                row.classList.add('transition', 'duration-200', 'hover:bg-gray-100');
+
                 let cells = row.querySelectorAll('td');
                 cells.forEach(cell => {
-                    cell.classList.add('px-4', 'py-2', 'border-t', 'border-gray-200');
+                    cell.classList.add('mt-4', 'text-sm', 'text-muted-foreground');
                 });
                 row.addEventListener('click', () => {
                     let title = row.cells[0].innerHTML;
                     let location = content_json.find(location => location.title === title);
                     if (location && location.latitude && location.longitude) {
-                        map.setView([location.latitude, location.longitude], 10);
-                        if (markerMap[title]) {
-                            markerMap[title].openPopup();  // Open the marker's popup when row is clicked
-                        }
+                        markers.zoomToShowLayer(markerMap[title], () => {
+                            markerMap[title].openPopup();
+                        });
                     }
                 });
             });
@@ -224,9 +226,9 @@ if (document.getElementById('map')) {
                         }
                     }
                 });
-                // if (markers.getLayers().length > 0) {
-                //     map.fitBounds(markers.getBounds());
-                // }
+                if (markers.getLayers().length > 0) {
+                    map.fitBounds(markers.getBounds());
+                }
             });
 
             // Add an event listener for the reset button

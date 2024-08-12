@@ -75,9 +75,9 @@
                         </button>
                         <input type="text" id="search" placeholder="Search projects..." class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
-                    <div class="overflow-x-auto">
-                        <table id="table" class="min-w-full bg-white rounded-lg shadow-md">
-                            <thead class="uppercase text-sm leading-normal">
+                    <div class="orelative w-full overflow-auto">
+                        <table id="table" class="w-full caption-bottom text-sm">
+                            <thead class="[&_tr]:border-b">
                                 <tr>
                                     <th class="py-3 px-6 text-left">Project Name</th>
                                     <th class="py-3 px-6 text-left">Agency</th>
@@ -85,7 +85,7 @@
                                     <th class="py-3 px-6 text-left">Year</th>
                                 </tr>
                             </thead>
-                            <tbody class="text-sm font-light">
+                            <tbody class="[&_tr:last-child]:border-0">
                                 <!-- Rows will be dynamically inserted here -->
                             </tbody>
                         </table>
