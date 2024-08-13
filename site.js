@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function styleMarkdown(element) {
     // Styling headings
     element.querySelectorAll('h1').forEach(h1 => {
-        h1.classList.add('text-5xl', 'font-extrabold', 'dark:text-white', 'mb-4');
+        h1.classList.add('text-5xl', 'font-extrabold', 'dark:text-white', 'mb-4', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'pb-2');
     });
 
     element.querySelectorAll('h2').forEach(h2 => {
-        h2.classList.add('text-4xl', 'font-bold', 'dark:text-white', 'mb-3');
+        h2.classList.add('text-4xl', 'font-bold', 'dark:text-white', 'mb-3', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'pb-2');
     });
 
     element.querySelectorAll('h3').forEach(h3 => {
@@ -99,9 +99,41 @@ function renderPopup(location) {
     `;
 }
 
+function renderGuide(guide) {
 
-if(document.getElementById("readme")){
-//    fetch the text from the README.md file
+    //  if the thumbnail is not available, use a placeholder image default.png
+    if (!guide.thumbnail || guide.thumbnail === '' || guide.thumbnail === 'default.png') {
+        guide.thumbnail = './thumbnails/default.png';
+    }
+
+    let link = '';
+    // if the resource_link is available and ends with .pdf 
+    if (guide.resource_link && guide.resource_link.endsWith('.pdf')) {
+        link = `<a href="${guide.resource_link}" target="_blank" class="text-blue-500 hover:underline dark:text-blue-400">View PDF</a>`;
+    } else if (guide.source_url) {
+        link = `<a href="${guide.source_url}" target="_blank" class="text-blue-500 hover:underline dark:text-blue-400">View Resource</a>`;
+    }
+
+    return `
+        <div class="mb-4 p-4 bg-white dark:bg-gray-800 rounded shadow" id="${guide.id}">
+            <div class="flex justify-between items-start">
+            <div class="flex-1">
+            <h2 class="text-lg font-bold text-gray-800 dark:text-white mb-1">${guide.title}</h2>
+            <p class="text-sm text-gray-600 dark:text-gray-400">${guide.resource_year}</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">${guide.author}</p>
+            ${link}
+            </div>
+            <div class="ml-4 flex-shrink-0">
+            <a href="${guide.source_url}" target="_blank"><img class="shadow-md w-32 h-auto object-cover" src="${guide.thumbnail}" alt="${guide.title}"></a>
+            </div>
+            </div>
+        </div>
+    `;
+}
+
+
+if (document.getElementById("readme")) {
+    //    fetch the text from the README.md file
     fetch('README.md')
         .then(response => response.text())
         .then(text => {
@@ -111,9 +143,71 @@ if(document.getElementById("readme")){
         .catch(error => console.error('Error fetching the README.md file:', error));
 }
 
+if (document.getElementById("divCoreConcepts")) {
+    // read the data from the content.json file and exclude anything that is that does not have a resource_type
+    fetch('data/content.json')
+        .then(response => response.json())
+        .then(data => {
+            let content = data.filter(location => location.resource_type);
+            // filter the data by resource type and order them alphabetically
+            let core_concepts = content.filter(location => location.resource_type == 'Foundational Resource').sort((a, b) => a.title.localeCompare(b.title));
+            let response_guides = content.filter(location => location.resource_type == 'Response Guide').sort((a, b) => a.title.localeCompare(b.title));
+            let problem_guides = content.filter(location => location.resource_type == 'Problem Guide').sort((a, b) => a.title.localeCompare(b.title));
+            let tool_guides = content.filter(location => location.resource_type == 'Tool Guide').sort((a, b) => a.title.localeCompare(b.title));
+
+            let divCoreConcepts = document.getElementById('divCoreConcepts');
+            let divResponseGuides = document.getElementById('divResponseGuides');
+            let divProblemGuides = document.getElementById('divProblemGuides');
+            let divToolGuides = document.getElementById('divToolGuides');
+
+            core_concepts.forEach(guide => {
+                let div = document.createElement('div');
+                div.innerHTML = renderGuide(guide);
+                divCoreConcepts.appendChild(div);
+            });
+
+            response_guides.forEach(guide => {
+                let div = document.createElement('div');
+                div.innerHTML = renderGuide(guide);
+                divResponseGuides.appendChild(div);
+            });
+
+            problem_guides.forEach(guide => {
+                let div = document.createElement('div');
+                div.innerHTML = renderGuide(guide);
+                divProblemGuides.appendChild(div);
+            });
+
+            tool_guides.forEach(guide => {
+                let div = document.createElement('div');
+                div.innerHTML = renderGuide(guide);
+                divToolGuides.appendChild(div);
+            });
+
+            let search = document.getElementById('search');
+
+            search.addEventListener('input', () => {
+                let value = search.value.toLowerCase();
+                let all_guides = [...core_concepts, ...response_guides, ...problem_guides, ...tool_guides];
+                all_guides.forEach(guide => {
+                    let div = document.getElementById(guide.id);
+                    if (guide.title.toLowerCase().includes(value) || guide.author.toLowerCase().includes(value)) {
+                        div.style.display = '';
+                    } else {
+                        div.style.display = 'none';
+                    }
+                });
+            }
+            );
+
+
+        })
+        .catch(error => console.error('Error fetching the data:', error));
+}
+
 if (document.getElementById('map')) {
 
-    let map = L.map('map', {minZoom: 2, maxZoom: 16}).setView([37.96, -62.25], 2);
+    let map = L.map('map', { minZoom: 2, maxZoom: 16 }).setView([37.96, -62.25], 2);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -121,9 +215,8 @@ if (document.getElementById('map')) {
         maxZoom: 20
     }).addTo(map);
 
-    // Initialize the marker cluster group
     let markers = L.markerClusterGroup();
-    let markerMap = {};  // To store marker references by title
+    let markerMap = {};
     let content_json = [];
 
     // Fetch the data from the data/content.json file
@@ -147,7 +240,6 @@ if (document.getElementById('map')) {
                         markers.addLayer(marker);
                     }
 
-                    // set an id to the marker for easy access
                     marker._leaflet_id = location.id;
                 }
             });
@@ -155,16 +247,6 @@ if (document.getElementById('map')) {
             map.addLayer(markers);
 
             let table = document.getElementById('table');
-
-            // table.classList.add(
-            //     'w-full',
-            //     'border-collapse',
-            //     'border',
-            //     'border-gray-300',
-            //     'divide-y',
-            //     'divide-gray-300',
-            //     'shadow-md',
-            // );
 
             data.forEach(location => {
                 if (location.latitude || location.longitude) {
@@ -209,6 +291,9 @@ if (document.getElementById('map')) {
             search.addEventListener('input', () => {
                 let value = search.value.toLowerCase();
                 rows.forEach(row => {
+                    // skip the header row
+                    if (row.rowIndex === 0) return;
+
                     let title = row.cells[0].innerHTML.toLowerCase();
                     let agency = row.cells[1].innerHTML.toLowerCase();
                     let location = row.cells[2].innerHTML.toLowerCase();
@@ -249,5 +334,85 @@ if (document.getElementById('map')) {
         })
         .catch(error => console.error('Error fetching the data:', error));
 
-}
+    let chart_one_options = {
+        series: [{
+            data: [61, 53, 32, 24, 22, 22, 20, 18, 17, 16, 16, 15]
+        }],
+        chart: {
+            type: 'bar',
+            height: 350
+        },
+        colors: ['#111827'],
+        plotOptions: {
+            bar: {
+                borderRadius: 1,
+                borderRadiusApplication: 'end',
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            offsetX: -6,
+            style: {
+                fontSize: '12px',
+                colors: ['#fff']
+            }
+        },
+        title: {
+            text: 'Top Agencies by Number of Projects',
+            align: 'left',
+            style: {
+                fontSize: '16px',
+                fontWeight: 'bold',
+                color: '#111827'
+            }
+        },
+        xaxis: {
+            categories: ['San Diego Police Department', 'Lancashire Constabulary', 'Metropolitan Police Service', 'Charlotte-Mecklenburg Police Department', 'Durham Constabulary', 'Cleveland Police', 'Los Angeles Police Department', 'Washington State Patrol', 'Fresno Police Department', 'Phoenix Police Department', 'Kansas City Police Department', 'South Yorkshire Police'
+            ],
+        }
+    };
 
+    let chart_two_options = {
+        series: [838, 215, 48, 13, 12, 4, 3],
+        chart: {
+            type: 'donut',
+        },
+        labels: ['United States', 'United Kingdom', 'Canada', 'All Other', 'New Zealand', 'Chile', 'Norway'],
+        theme: {
+            monochrome: {
+                enabled: true,
+                color: '#111827',
+            },
+        },
+        title: {
+            text: 'Submissions by Country',
+            align: 'left',
+            style: {
+                fontSize: '16px',
+                fontWeight: 'bold',
+                color: '#111827'
+            }
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    height: 350
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }]
+    };
+
+    let chart1 = new ApexCharts(document.querySelector("#chart_top_agencies"), chart_one_options);
+    chart1.render();
+
+
+    let chart2 = new ApexCharts(document.querySelector("#chart_submissions_by_county"), chart_two_options);
+    chart2.render();
+
+
+}
