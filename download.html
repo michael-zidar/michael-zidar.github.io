@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="site.js" defer></script>
 </head>
+
 <body>
     <nav class="flex items-center justify-between bg-white p-4 shadow-md border-b border-gray-300">
         <div id="logo" class="text-black font-semibold text-lg">
@@ -16,13 +18,16 @@
         </div>
         <div class="block lg:hidden">
             <button id="toggle" class="text-black focus:outline-none">
-                <svg id="hamburger-icon" class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg id="hamburger-icon" class="fill-current h-5 w-5" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
                     <title>Menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                 </svg>
-                <svg id="close-icon" class="hidden fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg id="close-icon" class="hidden fill-current h-5 w-5" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
                     <title>Close</title>
-                    <path d="M10 8.586L16.95 1.636l1.414 1.414L11.414 10l6.95 6.95-1.414 1.414L10 11.414l-6.95 6.95-1.414-1.414L8.586 10 1.636 3.05l1.414-1.414L10 8.586z"/>
+                    <path
+                        d="M10 8.586L16.95 1.636l1.414 1.414L11.414 10l6.95 6.95-1.414 1.414L10 11.414l-6.95 6.95-1.414-1.414L8.586 10 1.636 3.05l1.414-1.414L10 8.586z" />
                 </svg>
             </button>
         </div>
@@ -38,30 +43,137 @@
                 <a href="projects.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
                     Projects
                 </a>
-                <a href="download.html"  class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+                <a href="download.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
                     Data
                 </a>
-                <a href="https://github.com/michael-zidar/pop_projects" target="_blank" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700">
-                    <svg class="fill-current h-5 w-5 inline-block mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.599.111.793-.26.793-.577v-2.03c-3.338.725-4.043-1.61-4.043-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.833 2.807 1.303 3.493.997.107-.775.418-1.303.761-1.603-2.665-.303-5.466-1.333-5.466-5.93 0-1.31.468-2.381 1.237-3.221-.123-.303-.535-1.523.118-3.176 0 0 1.01-.324 3.304 1.23.957-.267 1.983-.4 3.003-.404 1.02.004 2.046.137 3.004.404 2.292-1.554 3.302-1.23 3.302-1.23.654 1.653.242 2.873.119 3.176.771.84 1.237 1.911 1.237 3.221 0 4.607-2.805 5.624-5.477 5.921.43.372.814 1.102.814 2.221v3.293c0 .319.193.692.801.576C20.565 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                <a href="https://github.com/michael-zidar/pop_projects" target="_blank"
+                    class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700">
+                    <svg class="fill-current h-5 w-5 inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.599.111.793-.26.793-.577v-2.03c-3.338.725-4.043-1.61-4.043-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.833 2.807 1.303 3.493.997.107-.775.418-1.303.761-1.603-2.665-.303-5.466-1.333-5.466-5.93 0-1.31.468-2.381 1.237-3.221-.123-.303-.535-1.523.118-3.176 0 0 1.01-.324 3.304 1.23.957-.267 1.983-.4 3.003-.404 1.02.004 2.046.137 3.004.404 2.292-1.554 3.302-1.23 3.302-1.23.654 1.653.242 2.873.119 3.176.771.84 1.237 1.911 1.237 3.221 0 4.607-2.805 5.624-5.477 5.921.43.372.814 1.102.814 2.221v3.293c0 .319.193.692.801.576C20.565 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
                     </svg>
                     GitHub Repo
                 </a>
             </div>
         </div>
     </nav>
+
     <div class="w-full max-w-6xl mx-auto my-8 px-8">
         <section id="main-content" class="mb-8">
             <h1 class="text-5xl font-semibold mb-4">Download Data</h1>
-            <p class="text-lg mb-4">The data sets are available for download. Click on the links below to download the data sets.</p>
-            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4" role="alert">
-                <p class="font-bold">Coming Soon!</p>
-                <p>Check back later for the data sets. You can always download them from the repo</p>
-            </div>
+            <p class="text-lg mb-4">The data sets are available for download. Click on the links below to download the
+                data sets.</p>
+        </section>
 
-        </section>  
+        <section class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-8">
+            <div
+                class="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow group hover:shadow-xl hover:-translate-y-2">
+                <a class="absolute inset-0 z-10" href="data/project_data.csv" download="project_data.csv">
+                    <span class="sr-only">Download POP Project Data</span>
+                </a>
+                <div class="flex items-center gap-4 bg-card p-6">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-6 h-6 text-primary-foreground">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M8 13h2"></path>
+                            <path d="M14 13h2"></path>
+                            <path d="M8 17h2"></path>
+                            <path d="M14 17h2"></path>
+                        </svg>
+                    </div>
+                    <div class="grid gap-1">
+                        <h3 class="text-lg font-semibold">project_data.csv</h3>
+                        <p class="text-sm text-muted-foreground">POP Project Data</p>
+                    </div>
+                </div>
+                <div class="border-t p-4">
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-9 rounded-md px-3 w-full text-primary-foreground">
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div
+                class="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow group hover:shadow-xl hover:-translate-y-2">
+                <a class="absolute inset-0 z-10" href="data/content.json" download="pop_content.json">
+                    <span class="sr-only">Download POP JSON</span>
+                </a>
+                <div class="flex items-center gap-4 bg-card p-6">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-6 h-6 text-primary-foreground">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1"></path>
+                            <path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1"></path>
+                        </svg>
+                    </div>
+                    <div class="grid gap-1">
+                        <h3 class="text-lg font-semibold">content.json</h3>
+                        <p class="text-sm text-muted-foreground">POP Guides and Projects.</p>
+                    </div>
+                </div>
+                <div class="border-t p-4">
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-9 rounded-md px-3 w-full text-primary-foreground">
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div
+                class="relative overflow-hidden transition-transform duration-300 ease-in-out rounded-lg shadow group hover:shadow-xl hover:-translate-y-2">
+                <a class="absolute inset-0 z-10" href="data/geocoded_agencies.csv" download="geocoded_agencies.csv">
+                    <span class="sr-only">Download Geocoded Agencies</span>
+                </a>
+                <div class="flex items-center gap-4 bg-card p-6">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-md bg-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-6 h-6 text-primary-foreground">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M8 13h2"></path>
+                            <path d="M14 13h2"></path>
+                            <path d="M8 17h2"></path>
+                            <path d="M14 17h2"></path>
+                        </svg>
+                    </div>
+                    <div class="grid gap-1">
+                        <h3 class="text-lg font-semibold">agencies.csv</h3>
+                        <p class="text-sm text-muted-foreground">POP Project Agency Data</p>
+                    </div>
+                </div>
+                <div class="border-t p-4">
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-9 rounded-md px-3 w-full text-primary-foreground">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-4xl font-semibold mb-4 border-b pb-2">Open Crime Data</h2>
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 mb-8" role="alert">
+                <p class="font-bold">Coming Soon!</p>
+                <p>Check back later for the data sets.</p>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-4xl font-semibold mb-4 border-b pb-2">Open Policy Data</h2>
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-8" role="alert">
+                <p class="font-bold">Coming Soon!</p>
+                <p>Check back later for the data sets.</p>
+            </div>
+        </section>
+
     </div>
 </body>
-</html>
 
-  
+</html>

@@ -143,7 +143,7 @@ if (document.getElementById("readme")) {
         .catch(error => console.error('Error fetching the README.md file:', error));
 }
 
-if (document.getElementById("divCoreConcepts")) {
+if (document.getElementById("divProblemGuides")) {
     // read the data from the content.json file and exclude anything that is that does not have a resource_type
     fetch('data/content.json')
         .then(response => response.json())
