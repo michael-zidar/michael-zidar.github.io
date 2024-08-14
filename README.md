@@ -41,7 +41,7 @@ This is a collection of information on POP projects and materials collected from
 
 The award data has been collected from the [POP Center](https://popcenter.asu.edu/content/about) website. The data is available in the [`data/`](https://github.com/michael-zidar/pop_projects/tree/main/data) directory of the repo. 
 
-These data are sumbissions for the [Herbert A. Goldstein Award for Excellence in Problem-Oriented Policing](https://popcenter.asu.edu/content/pop-projects). The award is given to agencies that have implemented a successful POP project. The data includes the agency name, the project title, the year the project was submitted, a link to the project submission, and the award status. These data have also been geocoded to include the location of the agency.
+These data are submissions for the [Herman A. Goldstein Award for Excellence in Problem-Oriented Policing](https://popcenter.asu.edu/content/pop-projects). The award is given to agencies that have implemented a successful POP project. The data includes the agency name, the project title, the year the project was submitted, a link to the project submission, and the award status. These data have also been geocoded to include the location of the agency.
 
 The data is available in the `data/project_data.csv` file. The data is in CSV (Can be opened with MS Excel) format and includes the following fields:
 
