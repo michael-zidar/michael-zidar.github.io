@@ -47,7 +47,7 @@ function styleMarkdown(element) {
 
     // Styling blockquotes
     element.querySelectorAll('blockquote').forEach(blockquote => {
-        blockquote.classList.add('border-l-4', 'border-gray-300', 'pl-4', 'italic', 'text-gray-600', 'dark:text-gray-400');
+        blockquote.classList.add('border-l-4', 'border-gray-00', 'pl-4', 'italic', 'text-gray-600', 'dark:text-gray-400');
     });
 
     // Styling code blocks
@@ -56,7 +56,7 @@ function styleMarkdown(element) {
     });
 
     element.querySelectorAll('code').forEach(code => {
-        code.classList.add('bg-gray-200', 'text-pink-500', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm');
+        code.classList.add('bg-gray-100', 'text-pink-800', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm');
     });
 
     // Styling unordered lists
