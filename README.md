@@ -49,7 +49,7 @@ These data are a collection of the POP Tool, Response, and Problem-specific guid
 
 #### Examples of the available guides:
 
-| ![Crime Analysis](thumbnails/60steps.png) | ![Implementing POP](thumbnails/building_our_way_out_of_crime_cops_version_geller_belsky_2009.png) | ![Understanding Crime](thumbnails/understanding_responding_to_crime_disorder_hot_spots_spi_final.png) | ![Street Robbery](thumbnails/street_robbery.png) |
+| ![Crime Analysis](thumbnails/60Steps.png) | ![Implementing POP](thumbnails/building_our_way_out_of_crime_cops_version_geller_belsky_2009.png) | ![Understanding Crime](thumbnails/understanding_responding_to_crime_disorder_hot_spots_spi_final.png) | ![Street Robbery](thumbnails/street_robbery.png) |
 |:----------------------------------:|:----------------------------------:|:----------------------------------:|:----------------------------------:|
 
 All of the guides can be found in the [`data/`](https://github.com/michael-zidar/pop_projects/tree/main/data) directory. The thumbnail images generated for each guide are also available in the repository along with the thumbnails generated for each of the Goldstein Award submissions.
