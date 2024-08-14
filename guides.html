@@ -9,7 +9,6 @@
     <script src="site.js" defer></script>
 </head>
 <body>
-    <!-- header nav styled with tailwind -->
     <nav class="flex items-center justify-between bg-white p-4 shadow-md border-b border-gray-300">
         <div id="logo" class="text-black font-semibold text-lg">
             POP Data Sets
@@ -54,15 +53,14 @@
         <section id="main-content" class="mb-8">
             <h1 class="text-5xl font-semibold mb-4">POP Guides</h1>
             <p class="mb-4">This page contains guides for using the POP Data Sets.</p>
-            <!-- links to the sections as buttons in a flex container -->
             <div class="flex flex-wrap">
                 <a href="#secCoreConsepts" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Core Concepts</a>
                 <a href="#secResponseGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Response Guides</a>
                 <a href="#secProblemGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Problem Guides</a>
                 <a href="#secToolGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Tool Guides</a>
 
-                <!-- search input pushed to the right -->
                 <div class="ml-auto mt-2">
+                    <label for="search" class="sr-only">Search</label>
                     <input type="text" id="search" class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Search Titles/Authors...">
                 </div>
 
@@ -78,27 +76,37 @@
         </section>
         
         <section id="secResponseGuides">
-            <h2 class="text-4xl font-semibold dark:text-white mb-3 border-b-2 border-gray-300 dark:border-gray-700 pb-2">
-                Response Specific Guides
-            </h2>
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+                <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
+                    Response Specific Guides
+                </h2>
+                <a href="#main-content" class="text-blue-500 hover:text-blue-700">Back to Top</a>
+            </div>
+
             <div id="divResponseGuides" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Cards will be inserted here -->
             </div>
         </section>
         
         <section id="secProblemGuides">
-            <h2 class="text-4xl font-semibold dark:text-white mb-3 border-b-2 border-gray-300 dark:border-gray-700 pb-2">
-                Problem Specific Guides
-            </h2>
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+                <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
+                    Problem Specific Guides
+                </h2>
+                <a href="#main-content" class="text-blue-500 hover:text-blue-700">Back to Top</a>
+            </div>
             <div id="divProblemGuides" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Cards will be inserted here -->
             </div>
         </section>
         
         <section id="secToolGuides">
-            <h2 class="text-4xl font-semibold dark:text-white mb-3 border-b-2 border-gray-300 dark:border-gray-700 pb-2">
-                Tool Guides
-            </h2>
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+                <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
+                    Tool Guides
+                </h2>
+                <a href="#main-content" class="text-blue-500 hover:text-blue-700">Back to Top</a>
+            </div>
             <div id="divToolGuides" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Cards will be inserted here -->
             </div>

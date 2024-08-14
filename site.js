@@ -115,20 +115,20 @@ function renderGuide(guide) {
     }
 
     return `
-        <div class="mb-4 p-4 bg-white dark:bg-gray-800 rounded shadow" id="${guide.id}">
-            <div class="flex justify-between items-start">
+    <div class="mb-4 p-4 bg-white dark:bg-gray-800 rounded shadow" id="${guide.id}">
+        <div class="flex justify-between items-start">
             <div class="flex-1">
-            <h2 class="text-lg font-bold text-gray-800 dark:text-white mb-1">${guide.title}</h2>
-            <p class="text-sm text-gray-600 dark:text-gray-400">${guide.resource_year}</p>
-            <p class="text-sm text-gray-600 dark:text-gray-400">${guide.author}</p>
-            ${link}
+                <h2 class="text-lg font-bold text-gray-800 dark:text-white mb-1">${guide.title}</h2>
+                <p class="text-sm text-gray-600 dark:text-gray-400">${guide.resource_year}</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">${guide.author}</p>
+                ${link}
             </div>
             <div class="ml-4 flex-shrink-0">
-            <a href="${guide.source_url}" target="_blank"><img class="shadow-md w-32 h-auto object-cover" src="${guide.thumbnail}" alt="${guide.title}"></a>
-            </div>
+                <a href="${guide.source_url}" target="_blank"><img class="shadow-md w-32 h-auto object-cover" src="${guide.thumbnail}" alt="${guide.title}"></a>
             </div>
         </div>
-    `;
+    </div>
+`;
 }
 
 
@@ -192,15 +192,17 @@ if (document.getElementById("divCoreConcepts")) {
                 all_guides.forEach(guide => {
                     let div = document.getElementById(guide.id);
                     if (guide.title.toLowerCase().includes(value) || guide.author.toLowerCase().includes(value)) {
-                        div.style.display = '';
+                        div.parentElement.classList.remove('hidden');
+                        div.classList.remove('hidden');
+                        div.classList.remove('mb-0'); 
                     } else {
-                        div.style.display = 'none';
+                        div.parentElement.classList.add('hidden');
+
+                        div.classList.add('hidden');
+                        div.classList.add('mb-0'); 
                     }
                 });
-            }
-            );
-
-
+            });
         })
         .catch(error => console.error('Error fetching the data:', error));
 }
@@ -377,6 +379,7 @@ if (document.getElementById('map')) {
         series: [838, 215, 48, 13, 12, 4, 3],
         chart: {
             type: 'donut',
+            height: 350
         },
         labels: ['United States', 'United Kingdom', 'Canada', 'All Other', 'New Zealand', 'Chile', 'Norway'],
         theme: {
