@@ -14,6 +14,9 @@ You can visit the site at [popdatasets.com](https://popdatasets.com). The site i
 ### Crime Data
 Coming soon...maybe...
 
+### Analysis Examples
+Coming soon...also maybe...
+
 
 ### POP Center Problem-Oriented Data 
 This is a collection of information on POP projects and materials collected from the [POP Center](https://popcenter.asu.edu/content/about) website. It is in a JSON format and includes the following fields: 
@@ -21,7 +24,7 @@ This is a collection of information on POP projects and materials collected from
 - `id`: The unique identifier for the project.
 - `title`: The title of the project.
 - `author`: The author of the project.
-- `resource_link`: A link to the project submission (usually .pdf but docx in some cases).
+- `resource_link`: A link to the project submission (usually .pdf but .docx in some cases).
 - `resource_year`: The year the project was submitted.
 - `resource_type`: The type of file that the project submission is.
 - `agency`: The name of the agency that submitted the project.

@@ -270,8 +270,7 @@ if (document.getElementById('map')) {
             // Add an event listener for the table rows
             let rows = document.querySelectorAll('#table tr');
             rows.forEach(row => {
-                row.classList.add('h-12', 'px-4', 'text-align-left', 'angle-middle', 'font-sm', 'text-muted-foreground');
-                row.classList.add('transition', 'duration-200', 'hover:bg-gray-100');
+                row.classList.add('h-12', 'px-4', 'text-align-left', 'angle-middle', 'font-sm', 'text-muted-foreground', 'transition', 'duration-200', 'hover:bg-gray-100', 'dark:hover:bg-gray-800', 'cursor-pointer');
 
                 let cells = row.querySelectorAll('td');
                 cells.forEach(cell => {
