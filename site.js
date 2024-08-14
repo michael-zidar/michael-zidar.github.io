@@ -410,9 +410,6 @@ if (document.getElementById('map')) {
     let chart1 = new ApexCharts(document.querySelector("#chart_top_agencies"), chart_one_options);
     chart1.render();
 
-
     let chart2 = new ApexCharts(document.querySelector("#chart_submissions_by_county"), chart_two_options);
     chart2.render();
-
-
 }
