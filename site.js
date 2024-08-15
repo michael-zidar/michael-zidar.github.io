@@ -52,7 +52,7 @@ function styleMarkdown(element) {
 
     // Styling code blocks
     element.querySelectorAll('pre').forEach(pre => {
-        pre.classList.add('bg-gray-900', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4'); 
+        pre.classList.add('bg-gray-100', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4'); 
     });
 
     element.querySelectorAll('code').forEach(code => {

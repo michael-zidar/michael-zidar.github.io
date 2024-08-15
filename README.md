@@ -83,3 +83,23 @@ The data is available in the `data/project_data.csv` file in CSV format (can be 
 - `administrative_area_level_2`: The administrative area level 2 of the agency.
 - `country`: The country of the agency.
 - `postal_code`: The postal code of the agency.
+
+
+## Example Use Cases
+
+#### Downloading Guide Data
+
+This example uses Python and the pandas library to download the guide data and save it to a CSV file. The data is loaded from the JSON file and filtered for guides that are Tool Guides. The filtered data is then saved to a CSV file.
+
+```python
+import pandas as pd
+
+# Load the data
+data = pd.read_json('https://raw.githubusercontent.com/michael-zidar/pop_projects/main/data/content.json')
+
+# Filter the data for guides to just the Tool Guides
+guides = data[data['resource_type'] == 'Tool Guide']
+
+# Save the guide data to a CSV file
+guides.to_csv('tool_guides.csv', index=False)
+```
