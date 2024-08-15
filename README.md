@@ -29,6 +29,7 @@ You can explore the data sets on the site at [popdatasets.com](https://popdatase
 
 ## In the Works
 > **Note**: This project is still in development. Here are some of the features that are planned for the future:
+> - **Example Scripts**: Provide example scripts for downloading and analyzing the data sets.
 > - **AI-Generated Summaries**: Use AI to generate summaries of the POP Center guides.
 > - **Crime Data Links**: Add links to crime data sets that can be used for testing and analysis.
 > - **Policy Data Sets**: Add data sets related to policing policies and practices.
