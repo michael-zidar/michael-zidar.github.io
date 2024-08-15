@@ -27,13 +27,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="site.js" defer></script>
 </head>
-<body>
-    <nav class="flex items-center justify-between bg-white p-4 shadow-md border-b border-gray-300">
-        <div id="logo" class="text-black font-semibold text-lg">
+<body class="dark:bg-black">
+
+    <nav class="flex items-center justify-between bg-white p-4 shadow-md border-b border-gray-300 dark:bg-black dark:text-white dark:border-black">
+        <div id="logo" class="dark:text-white dark:text-black font-semibold text-lg">
             POP Data Sets
         </div>
         <div class="block lg:hidden">
-            <button id="toggle" class="text-black focus:outline-none">
+            <button id="toggle" class="dark:text-white dark:text-black focus:outline-none">
                 <svg id="hamburger-icon" class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
@@ -46,20 +47,23 @@
         </div>
         <div id="menu" class="w-full lg:flex lg:items-center lg:w-auto hidden">
             <div class="lg:flex-grow">
-                <!-- underline the active tab -->
-                <a href="index.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+                <a href="/index.html" class="block mt-2 lg:inline-block lg:mt-0 dark:text-white dark:text-black hover:text-gray-700 dark:hover:text-gray-400 mr-4">
                     About
                 </a>
-                <a href="guides.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+                <a href="guides.html" class="block mt-2 lg:inline-block lg:mt-0 dark:text-white dark:text-black hover:text-gray-700 dark:hover:text-gray-400 mr-4">
                     Guides
                 </a>
-                <a href="projects.html" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+                <a href="projects.html" class="block mt-2 lg:inline-block lg:mt-0 dark:text-white dark:text-black hover:text-gray-700 dark:hover:text-gray-400 mr-4">
                     Projects
                 </a>
-                <a href="download.html"  class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">
+
+                <!-- button to download the project data from the data/project_data.csv -->
+                <a href="download.html"  class="block mt-2 lg:inline-block lg:mt-0 dark:text-white dark:text-black hover:text-gray-700 dark:hover:text-gray-400 mr-4">
                     Data
                 </a>
-                <a href="https://github.com/michael-zidar/pop_projects" target="_blank" class="block mt-2 lg:inline-block lg:mt-0 text-black hover:text-gray-700">
+
+
+                <a href="https://github.com/michael-zidar/pop_projects" target="_blank" class="block mt-2 lg:inline-block lg:mt-0 dark:text-white dark:text-black hover:text-gray-700 dark:hover:text-gray-400">
                     <svg class="fill-current h-5 w-5 inline-block mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.599.111.793-.26.793-.577v-2.03c-3.338.725-4.043-1.61-4.043-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.833 2.807 1.303 3.493.997.107-.775.418-1.303.761-1.603-2.665-.303-5.466-1.333-5.466-5.93 0-1.31.468-2.381 1.237-3.221-.123-.303-.535-1.523.118-3.176 0 0 1.01-.324 3.304 1.23.957-.267 1.983-.4 3.003-.404 1.02.004 2.046.137 3.004.404 2.292-1.554 3.302-1.23 3.302-1.23.654 1.653.242 2.873.119 3.176.771.84 1.237 1.911 1.237 3.221 0 4.607-2.805 5.624-5.477 5.921.43.372.814 1.102.814 2.221v3.293c0 .319.193.692.801.576C20.565 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
                     </svg>
@@ -70,23 +74,23 @@
     </nav>
     <div class="w-full max-w-6xl mx-auto my-8 px-8">
         <section id="main-content" class="mb-8">
-            <h1 class="text-5xl font-semibold mb-4">POP Guides</h1>
-            <p class="mb-4">This page contains guides for using the POP Data Sets.</p>
+            <h1 class="text-5xl font-semibold mb-4 dark:text-white">POP Guides</h1>
+            <p class="mb-4 dark:text-gray-200">This page contains guides for using the POP Data Sets.</p>
             <div class="flex flex-wrap">
-                <a href="#secCoreConsepts" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Core Concepts</a>
-                <a href="#secResponseGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Response Guides</a>
-                <a href="#secProblemGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Problem Guides</a>
-                <a href="#secToolGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Tool Guides</a>
+                <a href="#secCoreConsepts" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-400 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Core Concepts</a>
+                <a href="#secResponseGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-400 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Response Guides</a>
+                <a href="#secProblemGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-400 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Problem Guides</a>
+                <a href="#secToolGuides" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-400 text-white text-primary-foreground hover:bg-gray-700 h-8 px-4 py-2 mr-2 mt-2">Tool Guides</a>
 
                 <div class="ml-auto mt-2">
                     <label for="search" class="sr-only">Search</label>
-                    <input type="text" id="search" class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Search Titles/Authors...">
+                    <input type="text" id="search" class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-black dark:text-gray-200 dark:border-2 dark:border-zinc-700" placeholder="Search Titles/Authors...">
                 </div>
 
             </div>
         </section>
         <section id="secCoreConsepts">
-            <h2 class="text-4xl font-semibold dark:text-white mb-3 border-b-2 border-gray-300 dark:border-gray-700 pb-2">
+            <h2 class="text-4xl font-semibold dark:text-white mb-3 border-b-2 border-gray-300 dark:border-b dark:border-zinc-700 pb-2">
                 Core Concepts in Problem Oriented Policing
             </h2>
             <div id="divCoreConcepts" class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -95,7 +99,7 @@
         </section>
         
         <section id="secResponseGuides">
-            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700 dark:border-b">
                 <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
                     Response Specific Guides
                 </h2>
@@ -108,7 +112,7 @@
         </section>
         
         <section id="secProblemGuides">
-            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700 dark:border-b">
                 <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
                     Problem Specific Guides
                 </h2>
@@ -120,7 +124,7 @@
         </section>
         
         <section id="secToolGuides">
-            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700">
+            <div class="flex justify-between items-center mb-4 border-b-2 border-gray-300 dark:border-gray-700 dark:border-b">
                 <h2 class="text-4xl font-semibold dark:text-white mb-3  pb-2">
                     Tool Guides
                 </h2>

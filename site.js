@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
 function styleMarkdown(element) {
     // Styling headings
     element.querySelectorAll('h1').forEach(h1 => {
-        h1.classList.add('text-5xl', 'font-extrabold', 'dark:text-white', 'mb-4', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'pb-2');
+        h1.classList.add('text-5xl', 'font-extrabold', 'dark:text-white', 'mb-4', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'dark:border-b', 'pb-2');
     });
 
     element.querySelectorAll('h2').forEach(h2 => {
-        h2.classList.add('text-4xl', 'font-bold', 'dark:text-white', 'mb-3', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'pb-2');
+        h2.classList.add('text-4xl', 'font-bold', 'dark:text-white', 'mb-3', 'border-b-2', 'border-gray-300', 'dark:border-gray-700', 'dark:border-b', 'pb-2');
     });
 
     element.querySelectorAll('h3').forEach(h3 => {
@@ -52,11 +52,11 @@ function styleMarkdown(element) {
 
     // Styling code blocks
     element.querySelectorAll('pre').forEach(pre => {
-        pre.classList.add('bg-gray-900', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4');
+        pre.classList.add('bg-gray-900', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4'); 
     });
 
     element.querySelectorAll('code').forEach(code => {
-        code.classList.add('bg-gray-100', 'text-pink-800', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm');
+        code.classList.add('bg-gray-100', 'text-pink-800', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm', 'dark:bg-gray-700', 'dark:text-orange-400');
     });
 
     // Styling unordered lists
@@ -115,7 +115,7 @@ function renderGuide(guide) {
     }
 
     return `
-    <div class="mb-4 p-4 bg-white dark:bg-gray-800 rounded shadow" id="${guide.id}">
+    <div class="mb-4 p-4 bg-white dark:bg-black dark:border dark:border-zinc-700 rounded shadow" id="${guide.id}">
         <div class="flex justify-between items-start">
             <div class="flex-1">
                 <h2 class="text-lg font-bold text-gray-800 dark:text-white mb-1">${guide.title}</h2>
@@ -270,7 +270,7 @@ if (document.getElementById('map')) {
             // Add an event listener for the table rows
             let rows = document.querySelectorAll('#table tr');
             rows.forEach(row => {
-                row.classList.add('h-12', 'px-4', 'text-align-left', 'angle-middle', 'font-sm', 'text-muted-foreground', 'transition', 'duration-200', 'hover:bg-gray-100', 'dark:hover:bg-gray-800', 'cursor-pointer');
+                row.classList.add('h-12', 'px-4', 'text-align-left', 'angle-middle', 'font-sm', 'text-muted-foreground', 'transition', 'duration-200', 'hover:bg-gray-100', 'dark:hover:bg-gray-800', 'cursor-pointer', 'dark:text-gray-300');
 
                 let cells = row.querySelectorAll('td');
                 cells.forEach(cell => {
