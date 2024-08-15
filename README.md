@@ -1,8 +1,14 @@
-# POP Open Data Sets
+# POP Data Sets
 
 This repository contains a collection of data sets related to Problem-Oriented Policing (POP), which can be found in the [`data/`](https://github.com/michael-zidar/pop_projects/tree/main/data)  directory. Many of these data sets have been sourced from open platforms like the POP Center website. In some instances, the data has been enriched with additional information, such as geocoding specific locations or generating thumbnail images.
 
 The repository also includes an interactive site that allows users to explore these data sets more dynamically. Both the data and the site are available under the MIT license and are hosted on GitHub.
+
+
+## The Goal
+The aim of this site is to provide Problem Oriented Policing information to police departments, researchers, companies, and the public in a way that enables them to make things. These data can help with problem solving projects, be used to create Retrieval Augmented Generation (RAG) systems that leverage AI to generate useful information, or be used to create visualizations that help people understand the data better. The data is available in a structured format that can be easily downloaded and used in a variety of ways.
+
+I hope these data sets can be used to help improve policing practices, reduce crime, and make communities safer. These data contain road maps to reducing crime. 
 
 ## The Interactive Site - [popdatasets.com](https://popdatasets.com)
 
@@ -19,6 +25,14 @@ You can explore the data sets on the site at [popdatasets.com](https://popdatase
 - [Tailwind CSS](https://tailwindcss.com): For styling.
 - [Marked](https://github.com/markedjs/marked): A markdown parser and compiler.
 - [Apexcharts](https://apexcharts.com/): A modern charting library to create interactive visualizations.
+
+
+## In the Works
+> **Note**: This project is still in development. Here are some of the features that are planned for the future:
+> - **AI-Generated Summaries**: Use AI to generate summaries of the POP Center guides.
+> - **Crime Data Links**: Add links to crime data sets that can be used for testing and analysis.
+> - **Policy Data Sets**: Add data sets related to policing policies and practices.
+
 
 
 ## The Available Data Sets
