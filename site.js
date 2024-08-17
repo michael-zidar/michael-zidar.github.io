@@ -52,7 +52,7 @@ function styleMarkdown(element) {
 
     // Styling code blocks
     element.querySelectorAll('pre').forEach(pre => {
-        pre.classList.add('bg-gray-100', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4'); 
+        pre.classList.add('bg-gray-100', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4', 'dark:bg-gray-700'); 
     });
 
     element.querySelectorAll('code').forEach(code => {
@@ -79,6 +79,7 @@ function styleMarkdown(element) {
     element.querySelectorAll('img').forEach(img => {
         img.classList.add('rounded', 'shadow', 'max-w-full', 'h-auto', 'mb-4');
     });
+    hljs.highlightAll();
 }
 
 function renderPopup(location) {
