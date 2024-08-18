@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 function styleMarkdown(element) {
     // Styling headings
     element.querySelectorAll('h1').forEach(h1 => {
@@ -52,11 +51,11 @@ function styleMarkdown(element) {
 
     // Styling code blocks
     element.querySelectorAll('pre').forEach(pre => {
-        pre.classList.add('bg-gray-100', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4', 'dark:bg-gray-700'); 
+        pre.classList.add('bg-gray-100', 'text-white', 'rounded', 'p-4', 'overflow-x-auto', 'mb-4'); 
     });
 
     element.querySelectorAll('code').forEach(code => {
-        code.classList.add('bg-gray-100', 'text-pink-800', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm', 'dark:bg-gray-700', 'dark:text-orange-400');
+        code.classList.add('bg-gray-100', 'text-pink-800', 'rounded', 'px-1', 'py-0.5', 'font-mono', 'text-sm');
     });
 
     // Styling unordered lists
@@ -131,7 +130,6 @@ function renderGuide(guide) {
     </div>
 `;
 }
-
 
 if (document.getElementById("readme")) {
     //    fetch the text from the README.md file
